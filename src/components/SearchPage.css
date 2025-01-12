@@ -1,0 +1,38 @@
+.search-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.results {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /*I used this for 4 images per row */
+  gap: 30px;
+  justify-items: center;
+}
+.image-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding-bottom: 8px;
+}
+@media (max-width: 768px) {
+  .results {
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .results {
+    grid-template-columns: 1fr; /* 1 image per row on very small screens */
+  }
+}
+
